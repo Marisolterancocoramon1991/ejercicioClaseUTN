@@ -1,0 +1,102 @@
+/*
+ ============================================================================
+ Name        : 2.c
+ Author      : ker
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+int validacionTemperatura (void);
+
+int main(void) {
+
+	setbuf(stdout, NULL);
+
+	int validacion;
+
+	validacion= validacionTemperatura ();
+
+	switch (validacion)
+	{
+		case 0:
+
+			printf ("no ingreso la escala o tempertura correctamente");
+
+		break;
+
+		case 1:
+
+			printf("la escala es celsius");
+
+		break;
+
+		case 2:
+
+			printf("la escala es Fahrenheit");
+
+		break;
+
+	}
+
+
+	return EXIT_SUCCESS;
+}
+
+int validacionTemperatura (void)
+{
+	int retorno=0;
+	char tipoEscalaFahrenheitCelsius;
+	int temperatura;
+
+	printf("tipo de escala para Fahrenheit p y para celsius c \n");
+	scanf("%c", &tipoEscalaFahrenheitCelsius);
+
+	printf("ingresar temperatura entre punto de congelacion y ebullicion del agua \n");
+	scanf("%d", &temperatura);
+
+	if(tipoEscalaFahrenheitCelsius=='f'  &&  tipoEscalaFahrenheitCelsius=='c')
+	{
+		switch (tipoEscalaFahrenheitCelsius);
+		{
+			case "f" :
+
+				if(temperatura > 0 && temperatura <100)
+				{
+					retorno=1;
+				}
+
+			break;
+
+			case 'c' :
+
+				if(temperatura > 0 && temperatura <100)
+				{
+					retorno=2;
+				}
+
+			break;
+
+
+		}
+	}
+
+
+
+
+	return retorno;
+
+}
+/*Ejercicio 4-2:
+Realizar un programa que permita la carga de temperaturas en celsius y
+ fahrenheit , validando que las temperaturas ingresadas estén entre el
+  punto de congelación y ebullición del agua para cada tipo de escala.
+Las validaciones se hacen en una biblioteca.
+Las funciones de transformación de fahrenheit a celsius y de celsius a
+fahrenheit se hacen en otra biblioteca.
+Extra:
+ *
+ */

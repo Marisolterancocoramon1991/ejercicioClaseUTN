@@ -1,0 +1,27 @@
+10:09:55 **** Rebuild of configuration Debug for project kl ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\kl.o" "..\\src\\kl.c" 
+..\src\kl.c: In function 'main':
+..\src\kl.c:25:17: warning: implicit declaration of function 'prinf'; did you mean 'printf'? [-Wimplicit-function-declaration]
+   25 |                 prinf("ingresar cinco numeros");
+      |                 ^~~~~
+      |                 printf
+..\src\kl.c:26:17: warning: implicit declaration of function 'scandf'; did you mean 'scanf'? [-Wimplicit-function-declaration]
+   26 |                 scandf("%d", numero);
+      |                 ^~~~~~
+      |                 scanf
+..\src\kl.c:26:17: warning: 'numero' may be used uninitialized [-Wmaybe-uninitialized]
+   26 |                 scandf("%d", numero);
+      |                 ^~~~~~~~~~~~~~~~~~~~
+..\src\kl.c:17:13: note: 'numero' was declared here
+   17 |         int numero;
+      |             ^~~~~~
+gcc -o kl.exe "src\\kl.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: src\kl.o: in function `main':
+C:\Users\kervi\OneDrive\Escritorio\Proyectos\kl\Debug/../src/kl.c:25: undefined reference to `prinf'
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\kervi\OneDrive\Escritorio\Proyectos\kl\Debug/../src/kl.c:26: undefined reference to `scandf'
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: C:\Users\kervi\OneDrive\Escritorio\Proyectos\kl\Debug/../src/kl.c:31: undefined reference to `prinf'
+collect2.exe: error: ld returned 1 exit status
+
+10:09:59 Build Failed. 4 errors, 3 warnings. (took 3s.300ms)
+

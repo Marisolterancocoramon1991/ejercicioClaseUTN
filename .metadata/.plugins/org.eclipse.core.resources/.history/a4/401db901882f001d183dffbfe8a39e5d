@@ -1,0 +1,50 @@
+int validacionTemperatura (void)
+{
+	int retorno=0;
+	char tipoEscalaFahrenheitCelsius;
+	int temperatura;
+
+	printf("tipo de escala para Fahrenheit f y para celsius c \n");
+	scanf("%c", &tipoEscalaFahrenheitCelsius);
+
+
+	if(tipoEscalaFahrenheitCelsius=='f'  ||  tipoEscalaFahrenheitCelsius=='c')
+	{
+		switch (tipoEscalaFahrenheitCelsius)
+		{
+			case 'f' :
+				printf("ingresar temperatura entre punto de congelacion y ebullicion del agua \n"
+						"en grados Fahrenheit se encuentra en los 32º F \n"
+						"mientras que el punto de ebullición del agua está en los 212º F \n");
+
+				scanf("%d", &temperatura);
+
+				if(temperatura >= 32 && temperatura <= 212)
+				{
+					retorno=2;
+				}
+
+			break;
+
+			case 'c' :
+
+				printf("ingresar temperatura entre punto de congelacion y ebullicion del agua \n"
+						"en grados Celsius  0 °C se definió por el punto de congelación del agua y 100 °C \n"
+						"se definió por el punto de ebullición del agua \n");
+				scanf("%d", &temperatura);
+
+				if(temperatura > 0 && temperatura <100)
+				{
+					retorno=1;
+				}
+
+			break;
+
+
+		}
+	}
+
+	return retorno;
+
+}
+

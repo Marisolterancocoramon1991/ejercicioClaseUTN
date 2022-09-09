@@ -1,0 +1,16 @@
+18:15:20 **** Incremental Build of configuration Debug for project ejercicio 3.1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ejercicio 3.1.o" "..\\src\\ejercicio 3.1.c" 
+..\src\ejercicio 3.1.c: In function 'main':
+..\src\ejercicio 3.1.c:30:35: error: expected expression before 'int'
+   30 |         sumarMain = sumaDeEnteros(int primerNumero , int segundoNumero);
+      |                                   ^~~
+..\src\ejercicio 3.1.c:30:21: error: too few arguments to function 'sumaDeEnteros'
+   30 |         sumarMain = sumaDeEnteros(int primerNumero , int segundoNumero);
+      |                     ^~~~~~~~~~~~~
+..\src\ejercicio 3.1.c:14:5: note: declared here
+   14 | int sumaDeEnteros (int numeroUno, int numeroDos);
+      |     ^~~~~~~~~~~~~
+
+18:15:20 Build Failed. 2 errors, 0 warnings. (took 270ms)
+

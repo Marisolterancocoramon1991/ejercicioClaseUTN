@@ -1,0 +1,12 @@
+16:07:25 **** Incremental Build of configuration Debug for project nivel2guia ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\nivel2guia.o" "..\\src\\nivel2guia.c" 
+..\src\nivel2guia.c:14:7: warning: return type of 'main' is not 'int' [-Wmain]
+   14 | float main()
+      |       ^~~~
+gcc -o nivel2guia.exe "src\\nivel2guia.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file nivel2guia.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+
+16:07:27 Build Failed. 1 errors, 1 warnings. (took 1s.142ms)
+

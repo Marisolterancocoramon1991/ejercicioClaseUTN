@@ -1,0 +1,26 @@
+/*
+ ============================================================================
+ Name        : probandoPunteros.c
+ Author      : ker
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	int kervin=30;
+	int * marisol;
+
+	printf("la edad de kervin es %d", kervin);
+	printf("la direccion de la celda que contiene kervin %u", &kervin);
+	printf("vamos a ver que pasa con marisol ahora %d", marisol);
+	printf("");
+	printf("");
+	printf("");
+
+	return EXIT_SUCCESS;
+}

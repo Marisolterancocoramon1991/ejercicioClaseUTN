@@ -1,0 +1,64 @@
+/*
+ ============================================================================
+ Name        : 1.c
+ Author      : ker
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int sumaDeEnteros (int , int );
+int numeroPar(int );
+
+int main(void) {
+
+	setbuf(stdout, NULL);
+
+	int primerNumero;
+	int segundoNumero;
+	int sumarMain;
+	int parImpar;
+
+	printf("primer numero");
+	scanf("%d",&primerNumero);
+	fflush(stdin);
+
+	printf("segundo numero");
+	scanf("%d",&segundoNumero);
+	fflush(stdin);
+
+	sumarMain=sumaDeEnteros(primerNumero, segundoNumero);
+	parImpar=numeroPar( sumarMain);
+
+	printf("suma de numneros enteros %d y el numero es par si sale 1 o impar si sale 0 %d",
+			sumarMain,parImpar);
+
+	return EXIT_SUCCESS;
+
+}
+
+int sumaDeEnteros (int numeroUno, int numeroDos)
+{
+	int suma;
+
+	suma=numeroUno+numeroDos;
+
+	return suma;
+}
+
+int numeroPar(int resultado)
+{
+	int retorno;
+	if(resultado%2==0)
+	{
+		retorno=1;
+	}else
+	{
+		retorno=0;
+	}
+	return retorno;
+}

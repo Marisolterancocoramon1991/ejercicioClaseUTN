@@ -1,0 +1,48 @@
+/*
+ ============================================================================
+ Name        : 1.c
+ Author      : ker
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int sumaDeEnteros (int , int );
+
+int main(void) {
+
+	setbuf(stdout, NULL);
+
+	int primerNumero;
+	int segundoNumero;
+	int sumarMain;
+
+
+	printf("primer numero");
+	scanf("%d",&primerNumero);
+	fflush(stdin);
+
+	printf("segundo numero");
+	scanf("%d",&segundoNumero);
+	fflush(stdin);
+
+	sumarMain=sumaDeEnteros(primerNumero, segundoNumero);
+
+	printf("suma de numneros enteros %d", sumarMain);
+
+	return EXIT_SUCCESS;
+
+}
+
+int sumaDeEnteros (int numeroUno, int numeroDos)
+{
+	int suma;
+
+	suma=numeroUno+numeroDos;
+
+	return suma;
+}

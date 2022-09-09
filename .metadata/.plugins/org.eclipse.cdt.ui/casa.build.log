@@ -1,0 +1,7 @@
+18:54:47 **** Incremental Build of configuration Debug for project casa ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\casa.o" "..\\src\\casa.c" 
+gcc -o casa.exe "src\\casa.o" 
+
+18:54:48 Build Finished. 0 errors, 0 warnings. (took 838ms)
+

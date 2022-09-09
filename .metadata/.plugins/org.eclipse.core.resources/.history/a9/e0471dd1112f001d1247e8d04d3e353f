@@ -1,0 +1,13 @@
+/*
+ * convertir.h
+ *
+ *  Created on: 7 sept 2022
+ *      Author: kervi
+ */
+
+#ifndef CONVERTIR_H_
+#define CONVERTIR_H_
+
+int convertirVariables (int* x, int* y);
+
+#endif /* CONVERTIR_H_ */

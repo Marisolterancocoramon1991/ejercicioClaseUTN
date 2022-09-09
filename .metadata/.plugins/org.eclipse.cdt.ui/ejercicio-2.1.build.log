@@ -1,0 +1,34 @@
+12:50:50 **** Incremental Build of configuration Debug for project ejercicio-2.1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ejercicio-2.1.o" "..\\src\\ejercicio-2.1.c" 
+..\src\ejercicio-2.1.c: In function 'main':
+..\src\ejercicio-2.1.c:35:34: error: expected ';' before '}' token
+   35 |                 }while(numero==0)
+      |                                  ^
+      |                                  ;
+   36 |         }
+      |         ~                         
+..\src\ejercicio-2.1.c:39:1: error: expected declaration or statement at end of input
+   39 | }
+      | ^
+..\src\ejercicio-2.1.c:26:13: warning: unused variable 'productoNegativo' [-Wunused-variable]
+   26 |         int productoNegativo;
+      |             ^~~~~~~~~~~~~~~~
+..\src\ejercicio-2.1.c:25:13: warning: unused variable 'sumaPositivos' [-Wunused-variable]
+   25 |         int sumaPositivos;
+      |             ^~~~~~~~~~~~~
+..\src\ejercicio-2.1.c:23:13: warning: variable 'parMayor' set but not used [-Wunused-but-set-variable]
+   23 |         int parMayor;
+      |             ^~~~~~~~
+..\src\ejercicio-2.1.c:21:13: warning: variable 'menorNumero' set but not used [-Wunused-but-set-variable]
+   21 |         int menorNumero;
+      |             ^~~~~~~~~~~
+..\src\ejercicio-2.1.c:19:13: warning: variable 'impares' set but not used [-Wunused-but-set-variable]
+   19 |         int impares;
+      |             ^~~~~~~
+..\src\ejercicio-2.1.c:17:13: warning: variable 'pares' set but not used [-Wunused-but-set-variable]
+   17 |         int pares;
+      |             ^~~~~
+
+12:50:50 Build Failed. 2 errors, 6 warnings. (took 212ms)
+

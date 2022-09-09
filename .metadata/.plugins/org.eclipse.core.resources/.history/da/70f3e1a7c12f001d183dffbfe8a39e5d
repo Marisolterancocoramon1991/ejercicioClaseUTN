@@ -1,0 +1,23 @@
+/*
+ ============================================================================
+ Name        : arrays5.c
+ Author      : ker
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void) {
+	int kervin[6];
+
+	kervin[2]=6;
+
+
+	printf("mostrar el arrays de kervin indice dos %d", kervin[2]);
+
+	return EXIT_SUCCESS;
+}

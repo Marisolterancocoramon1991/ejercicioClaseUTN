@@ -1,0 +1,9 @@
+15:54:46 **** Incremental Build of configuration Debug for project ejercicio-piloto-punteros ****
+Info: Internal Builder is used for build
+gcc -o ejercicio-piloto-punteros.exe "src\\convertirYSuma.o" "src\\ejercicio-piloto-punteros.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: src\ejercicio-piloto-punteros.o: in function `main':
+C:\Users\kervi\OneDrive\Escritorio\Proyectos\ejercicio-piloto-punteros\Debug/../src/ejercicio-piloto-punteros.c:24: undefined reference to `convertirYSuma'
+collect2.exe: error: ld returned 1 exit status
+
+15:54:46 Build Failed. 2 errors, 0 warnings. (took 289ms)
+

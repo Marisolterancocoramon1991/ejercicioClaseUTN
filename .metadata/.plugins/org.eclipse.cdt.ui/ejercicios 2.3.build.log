@@ -1,0 +1,16 @@
+15:31:35 **** Incremental Build of configuration Debug for project ejercicios 2.3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ejercicios 2.3.o" "..\\src\\ejercicios 2.3.c" 
+..\src\ejercicios 2.3.c: In function 'main':
+..\src\ejercicios 2.3.c:62:59: warning: self-comparison always evaluates to false [-Wtautological-compare]
+   62 |                 }while(NumeroCliente>1000 && NumeroCliente!=NumeroCliente);
+      |                                                           ^~
+..\src\ejercicios 2.3.c:51:15: warning: variable 'precioDescuento' set but not used [-Wunused-but-set-variable]
+   51 |         float precioDescuento;
+      |               ^~~~~~~~~~~~~~~
+gcc -o "ejercicios 2.3.exe" "src\\ejercicios 2.3.o" 
+c:/mingw/bin/../lib/gcc/x86_64-w64-mingw32/12.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: cannot open output file ejercicios 2.3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+
+15:31:36 Build Failed. 1 errors, 2 warnings. (took 1s.230ms)
+

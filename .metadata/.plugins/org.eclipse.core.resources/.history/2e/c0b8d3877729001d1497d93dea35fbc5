@@ -1,0 +1,72 @@
+/*
+ ============================================================================
+ Name        : casa.c
+ Author: ker
+ Version     :
+ Copyright: Your copyright notice
+ Description: Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(void)
+{
+	setbuf(stdout, NULL);
+	int numeroUno;
+	int numeroDos;
+	int numeroTres;
+	int numeroMayor;
+	int resultado;
+	int numeroMedio;
+
+	printf("ingresar el primer numero");
+	scanf("%d", &numeroUno);
+	fflush(stdin);
+
+	printf ("ingresar el segundo numero");
+	scanf("%d", &numeroDos);
+	fflush(stdin);
+
+	printf("ingresar el numero tres");
+	scanf("%d", &numeroTres);
+	fflush(stdin);
+
+	if(numeroUno>numeroDos && numeroUno>numeroTres)
+	{
+		numeroMayor=numeroUno;
+	}
+	else if(numeroDos>numeroUno && numeroDos>numeroTres)
+	{
+		numeroMayor=numeroDos;
+	}
+	else if(numeroTres>numeroUno && numeroTres>numeroDos)
+	{
+		numeroMayor=numeroTres;
+	}else
+	{
+
+	}
+	if(numeroUno>numeroDos && numeroUno<numeroTres || numeroUno<numeroDos && numeroUno>numeroTres)
+	{
+		numeroMedio=numeroUno;
+
+	}else if(numeroDos>numeroUno && numeroDos<numeroTres || numeroDos<numeroUno && numeroDos>numeroTres)
+	{
+		numeroMedio=numeroDos;
+
+	}else if(numeroTres>numeroUno && numeroTres<numeroDos || numeroTres<numeroUno && numeroTres>numeroDos)
+	{
+		numeroMedio=numeroUno;
+	}
+
+
+
+	resultado= numeroUno+numeroDos;
+	printf("la suma del numero %d y"
+			" el numero %d es igual a %d ademas el numero mayor es %d y EL NUMERO DEL MEDIO ES %d",
+			numeroUno, numeroDos, resultado, numeroMayor, numeroMedio  );
+	return 0;
+
+}
