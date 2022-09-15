@@ -10,72 +10,109 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+void compararNumeroRepetitivoVector(int array[] , int len);
 
-int main(void) {
+int main(void)
+{
 
 	setbuf(stdout, NULL);
-
-	int numero[10];
-	int cantidadNegativo;
-	cantidadNegativo=0;
-	int cantidadPositivo;
-	cantidadPositivo=0;
+	int numeros[10];
+	int i=0;
+	int positivos;
+	positivos=0;
+	int negativos;
+	negativos=0;
 	int sumatoriaPares;
 	sumatoriaPares=0;
-	int mayorImpares;
-	int bandera;
-	bandera=1;
-	int contadorPares;
-	contadorPares=0;
-	int listadoNumerosPar[contadorPares];
-	int i;
+	//int conteoPares;
+	int mayorImpar;
+	//int x;
+	//int listadoImpares[x];
 
-	for(i=0; i<10; i++)
+	for(i=0;i<10;i++)
 	{
-		printf("ingresar el numero del espeacio %d", i);
-		scanf("%d", &numero[i]);
+
+		printf ("ingrese numero -100 al 100");
+		scanf("%d", &numeros[i]);
+
+		while(numeros[i]<-100 || numeros[i]>100)
+			{
+				printf("ingrese numero -100 al 100");
+				scanf("%d", &numeros[i]);
+
+			}
+
+		if(numeros[i]>0)
+		{
+			positivos++;
+		}else
+		{
+
+			negativos++;
+		}
+
+	}
+
+	for(i=0; i<10;i++)
+	{
+				printf("imprimir numero %d\n", numeros[i]);
+
 	}
 	for(i=0; i<10;i++)
 	{
-		if(numero[i]>0)
+		if(numeros[i]%2==0)
 		{
-			cantidadPositivo++;
+			printf("imprimir numero pares %d\n",  numeros[i]);
+			sumatoriaPares+=numeros[i];
 
 		}else
 		{
-			cantidadNegativo++;
-		}
-		if(numero[i] %2==0)
+			printf("imprimir numero impares %d\n",  i);
+
+			if(numeros[i]>mayorImpar )
 			{
-				sumatoriaPares+=numero[i];
-
-
-				listadoNumerosPar[contadorPares];
-				contadorPares=contadorPares+1;
-
-			}else
-			{
-				if(bandera==1)
-				{
-					mayorImpares=numero[i];
-					bandera=0;
-				}else
-				{
-					if(numero[i]>mayorImpares)
-					{
-						mayorImpares=numero[i];
-					}
-				}
+				mayorImpar=numeros[i];
 			}
+
+		}
 	}
 
+	printf("numero impar mayor %d\n"
+			"y la sumatoria de los pares es %d\n", mayorImpar, sumatoriaPares );
 
+	printf("cantidad de numeros positivos %d y negativos %d\n",positivos, negativos );
 
-	printf("cantidad de positivos %d cantidad de negativo %d sumatoria de pares %d \nel mayor de los "
-			"impares %d listado de los numeros ingresados %d \n listado de los numeros pares %d "
-			,cantidadPositivo,cantidadNegativo,sumatoriaPares,mayorImpares,numero[i], listadoNumerosPar[contadorPares]);
+	compararNumeroRepetitivoVector( numeros , 10);
 
 	return EXIT_SUCCESS;
+}
+
+void compararNumeroRepetitivoVector(int array[] , int len)
+{
+	int i;
+	int k;
+
+	if(array != NULL && len > 0)
+	{
+		for(i=0; i< len; i++)
+		{
+
+			for(k=0; k< 100; k++)
+			{
+
+				if(array[i]==array[k])
+				{
+					printf ("comparacion %d\n",array[i] );
+				}
+
+			}
+
+
+
+		}
+
+	}
+
 }
 
 /*Ejercicio 5-2:

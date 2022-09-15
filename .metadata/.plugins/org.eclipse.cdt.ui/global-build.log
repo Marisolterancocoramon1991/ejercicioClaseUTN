@@ -1,9 +1,5 @@
-22:37:29 **** Incremental Build of configuration Debug for project ejercicio 5.2 ****
+17:26:31 **** Rebuild of configuration Debug for project unidad2GuiaAlternativa; ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ejercicio 5.2.o" "..\\src\\ejercicio 5.2.c" 
-..\src\ejercicio 5.2.c: In function 'main':
-..\src\ejercicio 5.2.c:53:50: warning: statement with no effect [-Wunused-value]
-   53 |                                 listadoNumerosPar[contadorPares];
-      |                                 ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
-gcc -o "ejercicio 5.2.exe" "src\\ejercicio 5.2.o" 
-Info: Nothing to build for ejercicio 5.2
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\unidad2GuiaAlternativa;.o" "..\\src\\unidad2GuiaAlternativa;.c" 
+gcc -o unidad2GuiaAlternativa;.exe "src\\unidad2GuiaAlternativa;.o" 
+Info: Nothing to build for unidad2GuiaAlternativa;
